@@ -1,4 +1,4 @@
-import projectsData from "../public/data/projects.json";
+import projectsData from "@/public/data/projects.json";
 import ProjectCardServer from "@/components/project-card-server";
 import type { Project } from "@/components/project-card";
 
