@@ -1,32 +1,24 @@
 "use client"
 
-import { useEffect, useState } from "react"
 import ProjectCard, { type Project } from "@/components/project-card"
+import projectsData from "@/data/projects.json"
 
-export default function FeaturedProjects({ dataUrl = "/data/projects.json" }: { dataUrl?: string }) {
-  const [items, setItems] = useState<Project[]>([])
-  const [loading, setLoading] = useState(true)
+interface ProjectsData {
+  projects: Project[]
+}
 
-  useEffect(() => {
-    let mounted = true
-    fetch(dataUrl)
-      .then((r) => r.json())
-      .then((d) => {
-        const featured = (d.projects as Project[]).filter((p) => p.featured).slice(0, 3)
-        if (mounted) setItems(featured)
-      })
-      .finally(() => setLoading(false))
-    return () => {
-      mounted = false
-    }
-  }, [dataUrl])
+const featuredProjects = (projectsData as ProjectsData).projects
+  .filter((p) => p.featured)
+  .slice(0, 3)
 
-  if (loading) return <div className="text-[color:var(--muted)]">Loading featured projects…</div>
-  if (!items.length) return <div className="text-[color:var(--muted)]">No featured projects yet.</div>
+export default function FeaturedProjects() {
+  if (!featuredProjects.length) {
+    return <div className="text-[color:var(--muted)]">No featured projects yet.</div>
+  }
 
   return (
     <div role="list" className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {items.map((p) => (
+      {featuredProjects.map((p) => (
         <ProjectCard key={p.id} project={p} />
       ))}
     </div>
