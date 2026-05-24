@@ -1,0 +1,60 @@
+{
+  "projects": [
+    {
+      "id": "p1",
+      "title": "Meet-AI",
+      "description": "AI-powered video calling platform with real-time calls, GPT-generated meeting summaries, transcripts, and an AI chat that lets you query past meetings.",
+      "image": "https://res.cloudinary.com/rakesh2807/image/upload/v1779552881/MeetAI_jmgfbi.png",
+      "tags": [
+        "Next.js",
+        "TypeScript",
+        "OpenAI",
+        "Stream SDK",
+        "Inngest",
+        "Prisma",
+        "TailwindCSS"
+      ],
+      "live": "https://andrew-rouge-xi.vercel.app",
+      "repo": "https://github.com/Rakesh-27-git/Meet-AI",
+      "featured": true
+    },
+    {
+      "id": "p2",
+      "title": "Vibe",
+      "description": "AI-powered website generator that transforms user prompts into fully functional websites using OpenAI and E2B Sandbox for secure code execution.",
+      "image": "https://res.cloudinary.com/rakesh2807/image/upload/v1779552888/vibe_phokjk.png",
+      "tags": [
+        "Next.js",
+        "OpenAI",
+        "tRPC",
+        "Prisma",
+        "Docker",
+        "Inngest",
+        "TailwindCSS"
+      ],
+      "live": "https://vibe-phi-weld.vercel.app",
+      "repo": "https://github.com/Rakesh-27-git/vibe",
+      "featured": true
+    },
+    {
+      "id": "p3",
+      "title": "Store-It",
+      "description": "Secure cloud storage platform with OTP-based auth, parallel file uploads, real-time preview, and access-controlled sharing — similar to Google Drive.",
+      "image": "https://res.cloudinary.com/rakesh2807/image/upload/v1779552893/StoreIt_gzanfb.png",
+      "tags": ["Next.js", "TypeScript", "Appwrite", "TailwindCSS"],
+      "live": "https://store-it-tan.vercel.app",
+      "repo": "https://github.com/Rakesh-27-git/Store_It",
+      "featured": false
+    },
+    {
+      "id": "p4",
+      "title": "Landing Page",
+      "description": "A modern, animated landing page built with smooth scroll animations and a clean responsive design.",
+      "image": "https://res.cloudinary.com/rakesh2807/image/upload/v1779552897/Light-Saas-Landing-Page_foxvvd.png",
+      "tags": ["Next.js", "Framer Motion", "TailwindCSS"],
+      "live": "https://saas-landing-page-delta.vercel.app",
+      "repo": "https://github.com/Rakesh-27-git/saas-landing-page-1",
+      "featured": false
+    }
+  ]
+}
